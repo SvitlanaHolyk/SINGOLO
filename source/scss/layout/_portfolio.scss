@@ -1,0 +1,28 @@
+/* Portfolio */
+.portfolio {
+    background-color: $dark;
+    color:$grey;
+    & .btn-item{
+        border-radius: 8px;
+        border: 1px solid $grey;
+        background-color: $dark;
+        color: $grey;
+        padding: 5px 8px;
+        margin: 0 8px 12px 0;  
+        &:active{
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+    &-list{
+        @include list;
+    }
+    &-item{
+        @include list-item;
+        width: 224px;
+        margin: 8px 0 8px 0;
+    }
+    .porfolio-link {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,46 @@
+/*Global Styles*/
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px; 
+    }
+a:hover{
+    color:#fff;
+}
+.img-container{
+    & img{
+        max-width:100%;
+    }
+}
+.section{
+    .section-inner {
+        max-width: 940px;
+        margin: 0 auto;
+        padding-top: 67px;
+        padding-bottom: 67px;
+    }
+    .section-header{
+        font-size: 25px;
+    }
+    .section-desc{
+        font-size: 16px;
+    }
+    .section-content {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .content-name{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+.social-list{
+    .social-item {
+        display: inline-block;
+        text-decoration: none;
+        padding-right: 8px;
+    }
+    .social-link {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}

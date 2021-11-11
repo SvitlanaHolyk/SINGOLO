@@ -1,0 +1,16 @@
+/* Footer */
+.footer{
+    &-inner{
+        @include header-footer-inner;
+    }
+    background-color: $dark;
+    color: $grey;
+    padding: 16px 0;
+    & .copyright {
+        float: left;
+        font-size: 10px;
+    }
+    & .social-list{
+        text-align: right;
+    }
+}

@@ -1,0 +1,65 @@
+/* Get a Quote */
+.get-quote {
+    background-color: $red;
+    color: #fff;
+    .form{
+        width: 70%;
+        float: left;
+        margin-right: 20px;  
+        & .form-row input,.form-row textarea {
+            width: 100%;
+            background-color: #ca4549;
+            border: none;
+            border-radius: 3px;
+            margin-bottom: 18px;
+            height: 38px;
+            padding-left: 15px;
+            &::-webkit-input-placeholder{
+                color: $texteria;
+            }
+            &:-moz-placeholder{
+                color: $texteria;
+            }
+        }
+        & .form-row textarea{
+            padding-top: 5px;
+            height: 200px;
+            resize: none;
+        }
+        & .form-button{
+            text-align: right;
+            & input{
+                width: 60px;
+                height: 30px;
+                margin-left: 20px;
+                color: #fff;
+                background-color: #ca4549;
+                border: none;
+                border-radius: 3px;
+            }
+        }
+    }
+    .contact-info{
+        text-align: justify;
+        & .contact-list{
+            list-style: none;
+            & .contact-link{
+                color:#fff;
+                text-decoration: none;
+            }
+            & li:nth-child(1) a::before{
+                content: url('../img/location.png');
+                padding-right: 10px;
+                padding-left: 4px;
+                }
+            & li:nth-child(2) a::before{
+                content: url('../img/phone.png');
+                padding-right: 10px;
+            }
+            & li:nth-child(3) a::before{
+                content: url('../img/email.png');
+                padding-right: 10px;
+            }
+        }
+    }
+}

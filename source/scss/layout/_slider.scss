@@ -1,0 +1,14 @@
+/* Slider */
+.slider {
+    background-color: $red;
+    .carousel-inner {
+        width: 65%;
+        margin: 0 auto;
+    }
+    & .carousel-control-next{
+        justify-content: flex-end; 
+    }
+    & .carousel-control-prev{
+        justify-content:start;
+    }
+}

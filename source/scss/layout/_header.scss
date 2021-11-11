@@ -1,0 +1,41 @@
+/* Header */
+.header {
+    &-inner{
+        @include header-footer-inner;
+    }
+    background-color: $dark;
+    padding: 20px 0;
+    color: #fff;
+    &-logo{
+        font-size: 20px;
+        font-weight: 600;
+        float: left;  
+        color: #fff;
+        text-decoration: none;
+    }
+    &-logo-accent{
+        color: $red;
+    }
+    & .nav-list{
+        text-align: right;
+        font-size: 12px;
+        
+    }
+    & .nav-item{
+        @include list-item;
+        text-transform: uppercase;
+        &:not(:last-child) .nav-link::after {
+            content: '·';
+            font-weight: 900;
+            padding-left: 12px;
+            color: #565c74;
+        }
+    }
+    & .nav-link{
+        padding: 5px;
+        @include link;
+        &:hover{
+            color:$red; 
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// Mixins
+@mixin header-footer-inner {
+    max-width: 940px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+}
+@mixin list{
+    padding-left: 0;
+    margin-block-end: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@mixin list-item{
+    display: inline-block;
+    text-decoration: none;  
+}
+@mixin link {
+    color: #fff;
+    text-decoration: none;
+}

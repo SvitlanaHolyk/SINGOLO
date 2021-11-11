@@ -1,0 +1,17 @@
+/* About Us */
+.about-us {
+    color: $grey;
+    &-list{
+        @include list;
+    }
+    &-item{
+        @include list-item;
+        width: 300px;
+        .content-name{
+            padding-top:10px;
+        }
+        .social-list{
+            padding-left: 0;
+        }
+    }
+}
